@@ -40,8 +40,9 @@ namespace InteticsTask
 
         private static int GetData(out char[] bufferToRead)
         {
-            bufferToRead = new char[512];
-            return 512;
+            Console.WriteLine("Add Input Data");
+            bufferToRead = Console.ReadLine().ToCharArray();
+            return bufferToRead.Length;
         }
 
         private static void PutData(char[] bufferToPrint, int count)
